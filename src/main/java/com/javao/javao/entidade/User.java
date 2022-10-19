@@ -16,6 +16,8 @@ public class User {
     @Column(nullable = false)
     private String nome;
     @Column(nullable = false)
+    private String sobrenome;
+    @Column(nullable = false)
     private int idade;
     @Column(nullable = false)
     private String profissao;
@@ -23,7 +25,7 @@ public class User {
 
 
     public Long getId() {
-        return Id;
+        return this.Id;
     }
     public void setId(Long id) {
         this.Id = id;
@@ -33,6 +35,12 @@ public class User {
     }
     public void setNome(String nome) {
         this.nome = nome;
+    }
+    public String getSobrenome() {
+        return sobrenome;
+    }
+    public void setSobrenome(String sobrenome) {
+        this.sobrenome = sobrenome;
     }
     public int getIdade() {
         return idade;
